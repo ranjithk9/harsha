@@ -1,0 +1,22 @@
+inode {
+    
+    stage('Git Clone') {
+	  git credentialsId: 'git', url: 'https://github.com/Ranjithchary/harsha.git'
+    }
+    stage('Maven Clean') {
+       
+    }
+    stage('Maven Validate') {
+       bat 'mvn clean'
+	}
+	stage('Maven Compile') {
+       bat 'mvn clean'
+	}
+	stage('Maven Test') {
+        bat 'mvn clean'
+	}
+	stage('Maven Package') {
+       bat 'mvn clean'
+	}
+	
+}
